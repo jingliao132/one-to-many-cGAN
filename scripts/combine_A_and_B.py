@@ -1,3 +1,4 @@
+# this file is modified version of the one from pix2pix(https://github.com/phillipi/pix2pix)
 from pdb import set_trace as st
 import os
 import numpy as np
