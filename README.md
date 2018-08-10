@@ -31,7 +31,7 @@ Prepare training and testing data: refer to project [pix2pix](https://github.com
 
 - Train the model
 ```bash
-DATA_ROOT=./datasets/facades name=facades_generation which_direction=BtoA th train.lua
+DATA_ROOT=./datasets/facades name=facades_generation th train.lua
 ```
 - (Optionally) start the display server to view results as the model trains (See [Display UI](#display-ui) for more details)
 ```bash
@@ -40,7 +40,7 @@ th -ldisplay.start 8000 0.0.0.0
 
 - Finally, test the model:
 ```bash
-DATA_ROOT=./datasets/facades name=facades_generation which_direction=BtoA phase=val th test.lua
+DATA_ROOT=./datasets/facades name=facades_generation phase=val th test.lua
 ```
 The test results will be saved to an html file here: `./results/facades_generation/latest_net_G_val/index.html`.
 
@@ -49,7 +49,6 @@ The test results will be saved to an html file here: `./results/facades_generati
 ```bash
 DATA_ROOT=/path/to/data/ name=expt_name which_direction=AtoB th train.lua
 ```
-Switch `AtoB` to `BtoA` to train translation in opposite direction.
 
 Models are saved to `./checkpoints/expt_name` (can be changed by passing `checkpoint_dir=your_dir` in train.lua).
 
@@ -57,7 +56,7 @@ See `opt` in train.lua for additional training options.
 
 ### Test
 ```bash
-DATA_ROOT=/path/to/data/ name=expt_name which_direction=AtoB phase=val th test.lua
+DATA_ROOT=/path/to/data/ name=expt_name phase=val th test.lua
 ```
 
 This will run the model named `expt_name` in direction `AtoB` on all images in `/path/to/data/val`.
