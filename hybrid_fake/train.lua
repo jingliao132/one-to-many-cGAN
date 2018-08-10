@@ -32,7 +32,7 @@ opt = {
    display_plot = 'errL1',    -- which loss values to plot over time. Accepted values include a comma seperated list of: errL1, errG, and errD
    gpu = 1,                -- gpu = 0 is CPU mode. gpu=X is GPU mode on GPU X
    name = '',              -- name of the experiment, should generally be passed on the command line
-   which_direction = 'AtoB',    -- AtoB or BtoA
+   which_direction = 'AtoB',    -- A to B and B2
    phase = 'train',             -- train, val, test, etc
    preprocess = 'regular',      -- for special purpose preprocessing, e.g., for colorization, change this (selects preprocessing functions in util.lua)
    nThreads = 2,                -- # threads for loading data
