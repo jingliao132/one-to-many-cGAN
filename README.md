@@ -22,7 +22,8 @@ git clone https://github.com/jingliao132/one-to-many-cGAN.git
 cd one-to-many-cGAN
 ```
 
-- Download and Prepare your datasets
+- Download and Prepare your datasets:
+
 Original UT-Zappos50K dataset from https://github.com/phillipi/pix2pix#datasets
 
 Original MVOD5K dataset from paper [Mobile multi-view object image search] (Çalışır F, Baştan M, Ulusoy Ö, Güdükbay U (2017) Mobile multi-view object image search. Multimedia Tools & Applications 76(10):12433–12456)
