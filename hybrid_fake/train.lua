@@ -1,6 +1,6 @@
--- usage example: DATA_ROOT=/path/to/data/ which_direction=BtoA name=expt1 th train.lua 
+-- usage example: DATA_ROOT=/path/to/data/ name=expt1 th train.lua 
 --
--- code derived from https://github.com/soumith/dcgan.torch
+-- code derived from https://github.com/phillipi/pix2pix
 --
 
 require 'torch'
