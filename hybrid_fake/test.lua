@@ -1,7 +1,7 @@
--- usage: DATA_ROOT=/path/to/data/ name=expt1 which_direction=BtoA th test.lua
+-- usage: DATA_ROOT=/path/to/data/ name=expt1 th test.lua
 --
--- code derived from https://github.com/soumith/dcgan.torch
---
+-- code derived from https://github.com/phillipi/pix2pix
+-- 
 
 require 'image'
 require 'nn'
