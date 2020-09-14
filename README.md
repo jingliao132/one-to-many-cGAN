@@ -1,7 +1,7 @@
 # One-to-many-cGAN
 Pytorch implementation of one-to-many cGAN for multiple image-to-image translations.
 
-We provide both realizations of the Synthesize adversarial training. The training and testing scripts files are in the folder hybrid_fake and cascade_learn. Copy train.lua and test.lua of the corresponding desired realization to the main directory.
+We provide two implementations of one-to-many cGAN for the Hybrid Fake and Cascade Learning. The training and testing scripts files are in the folder hybrid_fake and cascade_learn. Copy train.lua and test.lua in the corresponding folder to the main directory before training/testing.
 
 ## Requirements
 - Linux or OSX
@@ -27,6 +27,8 @@ cd one-to-many-cGAN
 Original UT-Zappos50K dataset from https://github.com/phillipi/pix2pix#datasets
 
 Original MVOD5K dataset from paper [Mobile multi-view object image search] (Çalışır F, Baştan M, Ulusoy Ö, Güdükbay U (2017) Mobile multi-view object image search. Multimedia Tools & Applications 76(10):12433–12456)
+
+The proposed BehTex7K dataset is collected from online community for designers and creators, containing pictures in the Design and Art area. You could contact us for a personal link to the BehTex7K data.
 
 Prepare training and testing data: refer to project [pix2pix](https://github.com/phillipi/pix2pix#setup-training-and-test-data)
 
